@@ -1,23 +1,22 @@
-Ant Colony Optimisation on Aircraft Conflict Resolution
--------------------------------------------------------
+ant-conflict
+------------
 
 This project is a quick proof of concept: ant colony optimisation is a valid
-algorithm for solving aircraft conflicts.
+method for solving aircraft conflicts.
 
 ### The problem
 
-The problem considered is made of several aircraft placed on a circle and
-heading towards the centre of this circle. They are all going to conflict before
-reaching the centre: they will become too close to each other.
+The problem that is to be solved consists of several aircraft placed on a circle
+and heading towards the centre of this circle. They are all going to conflict
+before reaching the centre: they will become too close to each other.
 
 Air traffic controllers are in charge of avoiding this kind of situations; they
-can be assisted by software in order to help them reroute the aircraft for a
-safe flight configuration.
+can be assisted by software to reroute aircraft on a safe flight configuration.
 
 Aircraft conflict solving problem is a difficult problem, and it can be very
-hard to explore all possible combinations, find a route for each aircraft
-without conflicts, and minimise the flight delay. Metaheuristics are methods
-inspired by nature which, under certain conditions, converge towards an optimum.
+hard to explore all possible combinations, find a non-conflicting route for each
+aircraft, and minimise the flight delay. Metaheuristics are methods inspired by
+nature which, under certain conditions, converge towards an optimum.
 
 Genetic algorithms are commonly used for this problem; however, ant colony
 optimisation is a possible alternative.
