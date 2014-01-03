@@ -29,8 +29,8 @@ search engine.
 
 ### History
 
-I wrote the code in OCamL as part of my Master's thesis graduation requirements.
-I wrote it under a modern Unix environment with OCamL and relied on the popular
+I wrote the code in OCaml as part of my Master's thesis graduation requirements.
+I wrote it under a modern Unix environment with OCaml and relied on the popular
 Unix tool ```gnuplot``` for plotting the trajectories as they are computed.
 
 That was 2006.
