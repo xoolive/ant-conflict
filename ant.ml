@@ -26,16 +26,12 @@ let evaluate path =
                             | E2 (_,_,_) -> 1.
                             | _          -> 0.) ) path 1.
 
-(* In an array filled of nodes with cumulated probabilities, choose the node
- * with the closest probability to input parameter p *)
-
-
 (* Initialise problem *)
 
 let final_pos   = Array.create !nb_app {x = 0.; y = 0.}
 let initial_pos = Array.create !nb_app {x = 0.; y = 0.}
 
-(* All aircraft are placed around a circle, heading to the center *)
+(* All aircraft are placed around a circle, heading to the centre *)
 let initial_node = Array.init !nb_app (
   fun i ->
     (* 360 deg divided by the number of planes *)
@@ -47,7 +43,7 @@ let initial_node = Array.init !nb_app (
     final_pos.(i)   <- {x = radius *. cos angle;
                         y = radius *. sin angle};
     { tcur = 0; pos = pos; heading = angle; state = E0;
-      (* Initialise pheromons *)
+      (* Initialise pheromones *)
       pherom = (1. +. 6. *. (ftmax +. 1.)); }
 )
 
